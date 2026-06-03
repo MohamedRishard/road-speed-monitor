@@ -18,7 +18,19 @@ TRACKER     = "bytetrack.yaml"
 
 # ── Speed Estimation ───────────────────────────────────────────────────────
 SPEED_LIMIT_KMH  = 60
-PIXELS_PER_METER = 8.0
+
+# Reference lines — y coordinates from inspect_video.py
+LINE_A_Y         = 266      # upper reference line
+LINE_B_Y         = 571      # lower reference line
+
+# Calibration: real-world distance between Line A and Line B
+# Change this value based on your road knowledge
+# Start with 15.0 and we can tune it later
+LINE_DISTANCE_M  = 15.0     # meters between the two lines
+
+# Calculated automatically — do not change
+PIXELS_PER_METER = (LINE_B_Y - LINE_A_Y) / LINE_DISTANCE_M   # = 305/15 = ~20.3
+
 FPS_OVERRIDE     = None
 
 # ── Vehicle Classes (COCO dataset IDs) ────────────────────────────────────
