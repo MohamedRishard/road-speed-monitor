@@ -39,7 +39,7 @@
 ---
 
 ## 📁 Project Structure
-
+```bash
 road_speed_monitor/
 ├── src/
 │   ├── detector.py          # YOLOv8 vehicle detection
@@ -59,7 +59,7 @@ road_speed_monitor/
 │   └── inspect_video.py     # Video calibration helper
 ├── main.py                  # Pipeline entry point
 └── requirements.txt
-
+```
 ---
 
 ## ⚙️ Setup
@@ -99,7 +99,7 @@ python tools/inspect_video.py data/videos/traffic.mp4
 ---
 
 ## 📊 Sample Output
-
+```python
 ==================================================
 ROAD SPEED MONITORING — SESSION REPORT
 Total vehicles   : 11
@@ -108,8 +108,8 @@ Maximum speed    : 46.2 km/h
 Violations       : 3
 Violation rate   : 27.3%
 
+```
 ---
-
 ## ⚙️ Configuration
 
 Edit `config/settings.py` to tune the system:
