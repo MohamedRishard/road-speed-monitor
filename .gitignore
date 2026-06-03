@@ -1,0 +1,31 @@
+@"
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Output files
+output/videos/
+output/frames/
+output/reports/
+
+# Large video files
+data/videos/
+data/sample/
+
+# YOLOv8 model weights
+*.pt
+
+# VS Code settings
+.vscode/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+"@ | Out-File -FilePath .gitignore -Encoding utf8
